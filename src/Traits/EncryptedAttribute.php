@@ -12,11 +12,6 @@ trait EncryptedAttribute {
 
     public static $enableEncryption = true;
 
-    public function __construct() {
-        parent::__construct();
-        self::$enableEncryption = config('laravelDatabaseEncryption.enable_encryption');
-    }
-
      /**
      * @param $key
      * @return bool
